@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lato:wght@300;400;700;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="bi bi-house-fill"></i>
+                <a href="#">Oyster Properties</a>
+            </div>
+            <div class="nav"> 	
+                <i id="menu-bar"class="bi bi-list" onclick="drop()"></i>
+                <div class="navLinks">
+                    <ul>
+                        <li> <a class="active" href = "../index.html"> HOME </a> </li>
+                        <li> <a href = "./about.html"> ABOUT </a> </li>
+                        <li> <a href ="./contact.html"> CONTACT </a> </li>
+                        <li> <a href = "Blog.html"> BLOG </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!------Property section-------->
+    <section class="property">
+        <div class="the-container swiper">
+            <div class="the-wrapper swiper-wrapper">
+                <div class="the-slide swiper-slide">
+                    <img src="./Images/kat1.jpg" alt="">
+                </div>
+                <div class="the-slide swiper-slide">
+                    <img src="./Images/kat2.jpg" alt="">
+                </div>
+                <div class="the-slide swiper-slide">
+                    <img src="./Images/kat3.jpg" alt="">
+                </div>
+                <div class="the-slide swiper-slide">
+                    <img src="./Images/kat-i1.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <section class="property-desc">
+        <div class="description">
+            <h2>CYCLONE</h2>
+            <P>Invest into Cyclone Quarter, a beautiful new collection of 146 1-to-5-bedroom houses and apartments, located just a stone’s throw from the River Exe in the popular and highly sought-after St. Leonards area, in the heart of Exeter.</P>
+            <a href="form" class="r-btn">Show interest</a>
+        </div>
+        <div class="features">
+            <h3 class="price-o">Pricing</h3>
+            <div class="price">
+                <div>
+                    <span>Period</span>
+                    <p class="bold">Annually</p>
+                </div>
+                <div>
+                    <span>Price</span>
+                    <p class="bold">500,0000</p>
+                </div>
+            </div>
+            <div>
+                <h3>features</h3>
+                <ul>
+                    <li>Two bedrooms</li>
+                    <li>Two Bathrooms</li>
+                    <li>Living room</li>
+                    <li>24/7 electricity</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="reg">
+        <div class="form-container">
+            <i class="bi bi-x-lg close" onclick="closeForm()"></i>
+            <h3>Fill this form and we would reach out to you as soon as possible</h3>
+            <form action="">
+                <div class="form-a">
+                    <div class="forms">
+                        <label for="firstname">First name</label><br>
+                        <input type="text" id="firstname">
+                    </div>
+                
+                    <div class="forms">
+                        <label for="lastname">Last name</label><br>
+                        <input type="text" id="lastname">
+                    </div>
+                
+                    <div class="forms">
+                        <label for="email">Email Address</label><br>
+                        <input type="email" id="email">
+                    </div>
+                    
+                    <div class="forms">
+                        <label for="number">Phone number</label><br>
+                        <input type="number" id="number">
+                    </div>
+                    <br>
+                    <button id="submit-btn"> Submit </button>
+                </form>
+                </div>    
+    </section>
+
+    <section class="footer">
+        <div class="footer-cont">
+            <div class="footer-cont1">
+                <i class="bi bi-house-fill"> <a href="#">Oyster Properties</a></i>
+               <p>Acorn Property Invest is a leading property <br> 
+                investment company providing investors with an opportunity<br>
+                 to diversify into the UK property market.</p>
+            </div>
+
+            <div class="footer-cont2">
+                <div class="box">
+                    <h3> Location </h3>
+                    <p> Lagos Office: House 2 Crescent Cross Estate,<br>
+                        Hakeem Dickson Link Road, Elf Bus Stop, <br>
+                        Lekki Phase 1, Lagos.</p>
+                </div>
+                <div class="box">
+                    <h3> Quick Links </h3>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="box">
+                    <h3> Contact Info</h3>
+                        <p> +234558900</p>
+                        <p> soro@gmail.com</p>
+                </div>
+                <div class="media-icons">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="overlay"></div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="../prop.js">
+        </script>
+    </body>
+    </html>
